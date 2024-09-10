@@ -48,7 +48,7 @@ You can install it globally using npm. Run the following command in your termina
 ```
 
 ### Bundled version of the project
-** If you need a bundled version of the project, you can run:
+If you need a bundled version of the project, you can run:
 
 ```js
   yarn build
