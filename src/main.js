@@ -1,5 +1,5 @@
-import Quest from './modules/Quest'
+import Quest from "./modules/Quest"
 
-import '../style.css'
+import "../style.css"
 
-new Quest().welcom();
+new Quest().welcome()

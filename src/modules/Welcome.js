@@ -1,104 +1,104 @@
-import Button from "../elements/Button";
+import Button from "../elements/Button"
 
 class Welcome {
   /**
-  * @type { HTMLDivElement }
-  * @private
-  */
-  #$welcome = null;
+   * @type { HTMLDivElement | null }
+   * @private
+   */
+  #$welcome = null
 
   /**
-  * @type { Button }
-  * @private
-  */
+   * @type { Button }
+   * @private
+   */
   #$startBtn
 
   /**
-  * @type { VoidFunction }
-  * @private
-  */
-    #handleStart;
+   * @type { VoidFunction }
+   * @private
+   */
+  #handleStart
 
   /**
-  * @constructor
-  * @param { {
-  *   onStart: VoidFunction,
-  * } }
-  */
+   * @constructor
+   * @param { {
+   *   onStart: VoidFunction,
+   * } }
+   */
   constructor({ onStart }) {
-    this.#handleStart = onStart;
+    this.#handleStart = onStart
 
-    this.#createWelcomeWrapper();
+    this.#createWelcomeWrapper()
   }
 
   /**
-  * @memberof Welcome
-  * @public
-  * @returns { HTMLDivElement }
-  */
-  get welcomElement () {
+   * @memberof Welcome
+   * @public
+   * @returns { HTMLDivElement }
+   */
+  get welcomeElement() {
     return this.#$welcome
   }
 
   /**
-  * @private
-  * @type { VoidFunction }
-  */
+   * @private
+   * @type { VoidFunction }
+   */
   #createWelcomeWrapper = () => {
-    const $welcomWrapper = document.createElement('div');
+    const $welcomeWrapper = document.createElement("div")
 
-    $welcomWrapper.classList.add("field_wrapper");
+    $welcomeWrapper.classList.add("field_wrapper")
 
-    $welcomWrapper.appendChild(this.#createWelcomeTitle());
-    $welcomWrapper.appendChild(this.#createStartButton());
+    $welcomeWrapper.appendChild(this.#createWelcomeTitle())
+    $welcomeWrapper.appendChild(this.#createStartButton())
 
-    this.#$welcome = $welcomWrapper;
+    this.#$welcome = $welcomeWrapper
   }
 
   /**
-  * @private
-  * @returns { HTMLHeadingElement }
-  */
+   * @private
+   * @returns { HTMLHeadingElement }
+   */
   #createWelcomeTitle = () => {
-    const $message = document.createElement('h3');
+    const $message = document.createElement("h3")
 
-    $message.innerText = 'Welcome to "TEST SUIT QUEST"';
+    $message.innerText = 'Welcome to "TEST SUIT QUEST"'
 
-    return $message;
+    return $message
   }
 
   /**
-  * @private
-  * @returns { HTMLButtonElement }
-  */
+   * @private
+   * @returns { HTMLButtonElement }
+   */
   #createStartButton = () => {
     this.#$startBtn = new Button({
-      text: 'Start quest',
-      onClick: this.#start
+      text: "Start quest",
+      onClick: this.#start,
     })
 
-    return this.#$startBtn.buttonElement;
+    return this.#$startBtn.buttonElement
   }
 
   /**
-  * @type { VoidFunction }
-  * @private
-  */
+   * @type { VoidFunction }
+   * @private
+   */
   #start = () => {
-    this.destroy();
+    this.destroy()
 
-    this.#handleStart();
+    this.#handleStart()
   }
 
   /**
-  * @type { VoidFunction }
-  * @public
-  */
+   * @type { VoidFunction }
+   * @public
+   */
   destroy = () => {
-    this.#$welcome.remove();
+    this.#$startBtn.destroy()
 
-    this.#$startBtn.destroy();
+    this.#$welcome.remove()
   }
 }
 
-export default Welcome;
+export default Welcome

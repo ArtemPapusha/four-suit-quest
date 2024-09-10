@@ -1,35 +1,34 @@
-import Component from "./Component";
+import Component from "./Component"
 
 /**
  * @extends Component
  */
 class Cell extends Component {
-
   constructor() {
-    super();
+    super()
 
-    this.createElement();
+    this.createElement()
   }
 
   /**
-  * @memberof Cell
-  * @public
-  * @returns { HTMLDivElement }
-  */
-  get cellElement () {
+   * @memberof Cell
+   * @public
+   * @returns { HTMLDivElement }
+   */
+  get cellElement() {
     return this.$element
   }
 
   /**
-  * @override
-  *
-  * @type { VoidFunction }
-  * @protected
-  */
+   * @override
+   *
+   * @type { VoidFunction }
+   * @protected
+   */
   createElement() {
-    this.$element = document.createElement("div");
-    this.$element.classList.add("cell");
+    this.$element = document.createElement("div")
+    this.$element.classList.add("cell")
   }
 }
 
-export default Cell;
+export default Cell

@@ -1,36 +1,35 @@
-import Component from "../elements/Component";
+import Component from "../elements/Component"
 
 /**
  * @extends Component
  */
 class Field extends Component {
-
   constructor() {
-    super();
+    super()
 
-    this.createElement();
+    this.createElement()
   }
 
   /**
-  * @memberof Field
-  * @public
-  * @returns { HTMLDivElement }
-  */
-  get fieldElement () {
+   * @memberof Field
+   * @public
+   * @returns { HTMLDivElement }
+   */
+  get fieldElement() {
     return this.$element
   }
 
   /**
-  * @override
-  *
-  * @type { VoidFunction }
-  * @protected
-  */
+   * @override
+   *
+   * @type { VoidFunction }
+   * @protected
+   */
   createElement() {
-    this.$element = document.createElement("div");
-    this.$element.classList.add("field");
-  }
+    this.$element = document.createElement("div")
 
+    this.$element.classList.add("field")
+  }
 }
 
-export default Field;
+export default Field
