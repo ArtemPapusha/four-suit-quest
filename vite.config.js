@@ -4,7 +4,9 @@ export default defineConfig({
   build: {
     target: false,
     minify: false,
-    polyfillModulePreload: false,
+    modulePreload: {
+      polyfill: false
+    },
     rollupOptions: {
       output: {
         entryFileNames: '[name].js',
