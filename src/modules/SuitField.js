@@ -67,7 +67,7 @@ class SuitField {
    * @type { VoidFunction }
    * @private
    */
-  #suitFieldFilling() {
+  #suitFieldFilling = () => {
     this.#setSuitFieldProperties()
 
     for (let i = 0; i < COLUMN_AMOUNT * ROW_AMOUNT; i++) {
