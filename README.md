@@ -24,15 +24,15 @@ Follow these steps to get the project up and running on your local machine:
 yarn
 ```
 
-*[If Yarn is not installed](#if-yarn-is-not-installed)
+  *[If Yarn is not installed](#if-yarn-is-not-installed)
 
-4. Start the development server**:
+4. Start the development server:
 
 ```js
   yarn dev
 ```
 
-*[Bundled version of the project](#bundled-version-of-the-project)
+  *[Bundled version of the project](#bundled-version-of-the-project)
 
 5. Open your browser and go to:
 
