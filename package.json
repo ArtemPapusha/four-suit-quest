@@ -2,9 +2,6 @@
   "name": "four-suit-quest",
   "version": "0.0.1",
   "type": "module",
-  "engines": {
-    "node": "20.12.2"
-  },
   "author": "Artem Papusha <https://github.com/ArtemPapusha>",
   "scripts": {
     "dev": "vite",
