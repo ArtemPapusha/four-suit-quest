@@ -58,8 +58,7 @@ The bundled files will be available in the dist folder.
 
 ## Links
 
-Vercel: https://four-suit-quest-krinmlh0t-artempapushas-projects.vercel.app/
-
+Vercel: https://four-suit-quest.vercel.app
 ## Contact
 
 • Author: Artem Papusha • Email: art.empy@outlook.com

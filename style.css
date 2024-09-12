@@ -1,6 +1,5 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
@@ -48,19 +47,16 @@ h1 {
   display: grid;
   grid-template-columns: repeat(var(--column-amount), 1fr);
   grid-template-rows: repeat(var(--row-amount), 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
 }
 
 .cell {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 65px;
+  padding: 2rem 1.5rem;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  font-size: 24px;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -95,9 +91,9 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 372px;
-  min-height: 469px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  min-width: 440px;
+  min-height: 672px;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
 }
 
